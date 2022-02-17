@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/98b1af8471.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+
+    <script>
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Your Username and Password</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label>Username</label>
+          <input type="text" placeholder="Create your username" 
+          id="username" />
+          <i class="far fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small><h3>Error Message</h3></small>
+        </div>
+        <div class="form-control">
+          <label>Password</label>
+          <input type="password" placeholder="Create your password" 
+          id="password" />
+          <i class="far fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <span class="eye" onclick="eyeFunction()">          
+            <icon id='hide1' class="far fa-eye"></icon>
+            <icon id='hide2' class="far fa-eye-slash"></icon>
+          </span>
+          <small>Error Message</small>
+        </div>
+        <button id="Button" onclick="save()">Next</button>
+      </form>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
